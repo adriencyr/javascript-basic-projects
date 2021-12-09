@@ -1,29 +1,38 @@
-// set inital value to zero
-let count = 0;
-// select value and buttons
-const value = document.querySelector("#value");
-const btns = document.querySelectorAll(".btn");
+var counter = 0;
 
-btns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const styles = e.currentTarget.classList;
-    if (styles.contains("decrease")) {
-      count--;
-    } else if (styles.contains("increase")) {
-      count++;
-    } else {
-      count = 0;
-    }
+const btnd = document.getElementById("btnd");
+const btnr = document.getElementById("btnr");
+const btni = document.getElementById("btni");  
+const value = document.getElementById("value")
 
-    if (count > 0) {
-      value.style.color = "green";
-    }
-    if (count < 0) {
-      value.style.color = "red";
-    }
-    if (count === 0) {
-      value.style.color = "#222";
-    }
-    value.textContent = count;
-  });
+
+function changeBackgroundColour() {
+    if(counter < 0) {
+        document.body.style.backgroundColor = "red";
+    } else if (counter === 0) {
+        document.body.style.backgroundColor = "white";
+    } else if (counter > 0) {
+        document.body.style.backgroundColor = "green";
+    };  
+}
+
+btnd.addEventListener("click", function () {
+    counter--;
+    value.textContent = counter.toString();
+
+   changeBackgroundColour();  
+});
+
+btnr.addEventListener("click", function () {
+    counter = 0;
+    value.textContent = "0";
+
+    changeBackgroundColour(); 
+});
+
+btni.addEventListener("click", function () {
+    counter++;
+    value.textContent = counter.toString();
+
+    changeBackgroundColour();
 });
