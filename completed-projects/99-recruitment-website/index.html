@@ -5,20 +5,74 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 </style>
-<script src="app.js"></script>
+
 <body>
 
 
 <div class="container">
     <nav style="box-shadow: 0px 10px 0px -5px;">
-        <img src="aircanada.svg.png" alt="Air Canada Logo" style="width:25%">
-        <img src="airplane.png" alt="Airplane" style="position:absolute; height: 100%; width: auto; object-fit: cover; left:95%">
+        <img src="./assets/aircanada.svg.png" alt="Air Canada Logo" style="width:25%">
+        <img id="nav-toggle" src="./assets/airplane.png" alt="Airplane" style="position:absolute; height: 5%; width: auto; object-fit: cover; left:95%">
+        
     </nav>
- 
+
+    <!-- buttons to modify like counter -->
+    <div class="nav-container">
+        <div class="button-container">
+            <button class="btncount" id="btni"><img src="./assets/arrow.png"></button>
+          <button class="btncounta" id="btnr">Likes: 0</button>
+          <button class="btncount" id="btnd"><img src="./assets/arrow.png" style="transform:rotate(180deg)"></button>
+          
+        </div>
+
+        <div class="flipper-container">
+            <button id="btnt">New Theme</button>
+            <button id="dombtn">click me for something special!</button>
+        </div>
+
+        
+    </div>
+    
+
+    <h1>the premier flying experience - now is your chance to be apart of it.</h1>
+    <p>Air Canada is seeking people of all background and various skills to join our team. We serve customers around the globe and represent Canada in our travels!</p>
+
+    <h3>why join us?</h3>
+    <p><ul>
+        <p>1. Full medical coverage</p>
+        <p>2. Flexible hours and pay</p>
+        <p>3. A cultivating aerospace experience</p>
+    </ul></p>
+  </div>
+  <!-- review -->
+  <h1>check out our employee reviews:</h1>
+  <article class="review">
+    <div class="img-container">
+      <img src="./assets/killua.jpg" id="person-img" alt="img"/>
+    </div>
+    <h4 id="author">Killua Zoldyck</h4>
+    <p id="job">Pilot</p>
+    <p id="info">
+      I've never actually flown the plane before. I just carry the passengers on my back since I'm faster. but it's still pretty fun!
+    </p>
+    <!-- prev next buttons-->
+    <div class="button-container-2">
+      <button class="prev-btn review-btn">
+        <img src="./assets/arrow.png" style="transform:rotate(-90deg)">
+      </button>
+      <button class="next-btn review-btn">
+        <img src="./assets/arrow.png" style="transform:rotate(90deg)">
+      </button>
+    </div>
+    <!-- random button -->
+    <button class="random-btn">surprise me</button>
+  </article>
  <p>This is a paragraph.</p>
  <p>This is another paragraph.</p>
 </div>
-
+<p>hey guy</p>
+<script src="app.js"></script>
 </body>
 </html>

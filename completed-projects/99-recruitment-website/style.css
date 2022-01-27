@@ -1,9 +1,103 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
 }
 
 img {
     max-width: 100%;
     max-height: 100%;
 }
+
+.review {
+    text-align: center;
+    margin: 15vw;
+    padding: 5vh;
+    margin-top: 10vh;
+    box-shadow: 1vh 1vh 1vh rgb(207, 207, 207);
+    background-color: rgb(247, 247, 247);
+    font-size: 120%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#person-img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100%;
+}
+
+#author {
+    color: rgb(255,0,0);
+}
+.review-btn {
+    background-color: transparent;
+    border-style: none;
+    font-size: 100%;
+    margin-top: 3vh;
+}
+.review-btn:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+.random-btn {
+    border-style: solid;
+    border-color: rgb(211, 151, 151);
+}
+
+.nav-container {
+    height: 0;
+    overflow: hidden;
+    background-color: rgb(63, 20, 20);
+}
+
+.nav-container button {
+    color: var(--clr-grey-3);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+  }
+
+.show-nav {
+    height:12rem;
+}
+
+.button-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+.btncount {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    max-width: auto;
+    max-height: 10%;
+}
+
+.btncounta {
+    background-color: darkred;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 100%;
+    max-width: 2%;
+    max-height: auto;
+    text-align: center;
+}
+
+button img {
+    width: 2%;
+    height: auto;
+    filter: invert(11%) sepia(97%) saturate(7107%) hue-rotate(360deg) brightness(101%) contrast(110%);
+}
+
